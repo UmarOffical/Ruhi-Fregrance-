@@ -4,65 +4,76 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
+    line-height: 1.6;
 }
 
 header,
 footer {
-    background-color: #1b1a1a;
+    background-color: #333333; /* Matches the first theme */
     color: white;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1,
 footer p {
-    font-size: 2.5rem;
-    margin-top: 25px;
-    font-family: sans-serif;
+    font-size: 2.8rem; /* Adjusted to match the first theme */
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 nav {
-    margin-top: 50px;
+    margin-top: 10px; /* Matches the spacing from the first theme */
 }
 
 nav a {
-    margin: 15px;
-    font-size: 1rem;
+    margin: 0 20px; /* Matches the first theme */
+    font-size: 1.2rem; /* Font size as in the first style */
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #f39c12; /* Hover color from the first theme */
 }
 
 .container {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto; /* Padding matches the first theme */
     padding: 20px;
 }
 
 .section h2 {
     text-align: center;
-    color: #000000;
+    color: #2c3e50; /* Matches the section title color in the first theme */
     margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px; /* Matches spacing between product cards in the first theme */
 }
 
 .product-card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px; /* Matches the border radius of the first theme */
     width: 300px;
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Hover animation consistent with the first theme */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
@@ -71,25 +82,80 @@ nav a:hover {
 }
 
 .product-card h3 {
-    font-size: 1.2rem;
-    margin: 15px 0;
+    font-size: 1.4rem; /* Matches the first theme */
+    margin: 20px 0;
+    color: #2c3e50;
 }
 
 .product-card p {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Matches the first theme */
     color: #555;
+    margin-bottom: 20px;
 }
 
 .product-card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #000000;
+    padding: 12px 30px; /* Padding adjusted to match buttons in the first theme */
+    background-color: #f39c12;
     color: #fff;
     border-radius: 4px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .product-card a:hover {
-    background-color: #000000;
+    background-color: #e67e22; /* Matches hover effect of the first theme buttons */
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1,
+    footer p {
+        font-size: 2.2rem; /* Responsive scaling as in the first theme */
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1,
+    footer p {
+        font-size: 1.8rem; /* Matches responsive styles in the first theme */
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-card {
+        width: 90%;
+    }
 }
