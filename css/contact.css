@@ -1,16 +1,21 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Neutral text color */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
     line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
 }
 
 /* Header */
@@ -28,23 +33,21 @@ header h1 {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+/* Navigation */
 nav {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 12px;
-    font-size: 1.1rem;
+    margin: 0 20px;
+    font-size: 1.2rem;
     color: #fff;
-    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff6600;
-    text-decoration: underline;
+    color: #f39c12;
 }
-
 /* Container */
 .container {
     max-width: 1200px;
