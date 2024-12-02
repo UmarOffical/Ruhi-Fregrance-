@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f39c12;
+    color: #000000;
 }
 /* Container */
 .container {
@@ -94,7 +94,7 @@ form button {
 
 form input:focus,
 form textarea:focus {
-    border-color: #ff6600;
+    border-color: #000000;
     outline: none;
     background-color: #f9f9f9; /* Slight highlight on focus */
 }
@@ -127,14 +127,14 @@ form button:hover {
 }
 
 .info a {
-    color: #ff6600; /* Bright link color */
+    color: #000000; /* Bright link color */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .info a:hover {
     text-decoration: underline;
-    color: #e65c00; /* Slightly darker shade on hover */
+    color: #575757; /* Slightly darker shade on hover */
 }
 
 /* Footer */
@@ -171,4 +171,3 @@ footer {
     .info p {
         font-size: 0.9rem;
     }
-}
