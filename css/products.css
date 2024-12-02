@@ -7,36 +7,46 @@ body {
     line-height: 1.6;
 }
 
-header,
-footer {
-    background-color: #333333; /* Matches the first theme */
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* Header */
+header {
+    background-color: #333333;
     color: white;
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1,
-footer p {
-    font-size: 2.8rem; /* Adjusted to match the first theme */
+header h1 {
+    font-size: 2.8rem;
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+/* Navigation */
 nav {
-    margin-top: 10px; /* Matches the spacing from the first theme */
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 20px; /* Matches the first theme */
-    font-size: 1.2rem; /* Font size as in the first style */
+    margin: 0 20px;
+    font-size: 1.2rem;
     color: #fff;
-    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f39c12; /* Hover color from the first theme */
+    color: #f39c12;
 }
 
 .container {
