@@ -1,6 +1,5 @@
-/* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -8,43 +7,47 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
 }
 
 /* Header */
 header {
-    background-color: #333333; /* Matches the first theme */
+    background-color: #333333;
     color: white;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.8rem; /* Matches the first theme */
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
+/* Navigation */
 nav {
-    margin-top: 10px; /* Matches spacing from the first theme */
+    margin-top: 10px;
 }
 
 nav a {
     margin: 0 20px;
-    font-size: 1.2rem; /* Matches the font size in the first theme */
+    font-size: 1.2rem;
     color: #fff;
-    text-decoration: none;
-    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f39c12; /* Matches hover effect of the first theme */
+    color: #f39c12;
 }
-
 /* Hero Section */
 .hero {
     text-align: center;
